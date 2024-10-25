@@ -8,6 +8,7 @@ terraform {
 }
 
 resource "null_resource" "Test_hello" {
-  name = "test-resource"
-
-}
+  provisioner "local-exec" {
+    command = "echo Hello"
+ }
+ }
