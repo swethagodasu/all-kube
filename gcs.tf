@@ -8,5 +8,6 @@ terraform {
 }
 
 resource "null_resource" "Test_hello" {
+  name = "test-resource"
 
 }
