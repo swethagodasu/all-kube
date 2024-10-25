@@ -7,8 +7,12 @@ terraform {
   }
 }
 
+provider "google" {
+  region = "us-central1"
+}
+
 resource "null_resource" "Test_hello" {
   provisioner "local-exec" {
-    command = "echo Hello"
+    command = "echo 'Hello'"
  }
  }
